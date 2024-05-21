@@ -1,0 +1,15 @@
+.example-card {
+    max-width: 400px;
+  }
+
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  mat-card-title {
+    color: white !important;
+  }
