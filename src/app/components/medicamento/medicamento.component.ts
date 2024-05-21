@@ -70,7 +70,7 @@ export class MedicamentoComponent implements OnInit{
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.itemId = params.get('id')!;
-      this.headerImageUrl = this.medicina[Number(this.itemId)].link;
+      this.headerImageUrl = this.medicina[Number(this.itemId)-1].link;
       this.name = this.medicina[Number(this.itemId)-1].nombre;
       console.log('id ', this.itemId);
     });
